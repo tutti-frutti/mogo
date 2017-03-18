@@ -1,0 +1,26 @@
+.section-title {
+    text-align: center;
+    margin-bottom: 2.5em;
+    p {
+        @include ks(1.5rem, 1.5rem);
+        padding-bottom: 20px;
+        color: #000;
+    }
+    h3 {
+        @include monst-b(1.875rem, 1.875rem);
+        position: relative;
+        padding-bottom: 50px;
+        text-transform: uppercase;
+        color: #000;
+        &::before {
+            position: absolute;
+            content: '';
+            margin-left: -30px;
+            left: 50%;
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background: #f38181;
+        }
+    }
+}

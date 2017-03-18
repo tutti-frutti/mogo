@@ -1,0 +1,13 @@
+.button {
+    @include monst-b(0.875rem, 40px);
+    display: inline-block;
+    padding: 0 30px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #fff;
+    &._mb {
+        margin-bottom: 120px;
+    }
+}

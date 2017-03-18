@@ -1,0 +1,38 @@
+.slider {
+    &__inner {
+        position: relative;
+    }
+    &__intro {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 830px;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        p {
+            @include ks(4.5rem, normal);
+            color: #fff;
+        }
+        h2 {
+            @include monst-b(9.375rem, 9.375rem);
+            position: relative;
+            padding-bottom: 0.5em;
+            margin-bottom: 0.5em;
+            text-transform: uppercase;
+            color: #fff;
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -30px;
+                left: 50%;
+                bottom: 0;
+                width: 60px;
+                height: 3px;
+                background: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@mixin ks($font-size, $line-height) {
+font-family: 'Kaushan Script', cursive;;
+font-weight: normal;
+font-style: normal;
+font-size: $font-size;
+line-height: $line-height;
+}
+
+@mixin monst($font-size, $line-height) {
+font-family: 'Montserrat', sans-serif;
+font-weight: normal;
+font-style: normal;
+font-size: $font-size;
+line-height: $line-height;
+}
+
+@mixin monst-b($font-size, $line-height) {
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+font-style: normal;
+font-size: $font-size;
+line-height: $line-height;
+}
+
+@mixin rob($font-size, $line-height) {
+font-family: 'Roboto', sans-serif;
+font-weight: normal;
+font-style: normal;
+font-size: $font-size;
+line-height: $line-height;
+}
+
+@mixin list-inl($margin) {
+    display: inline-block;
+    list-style: none;
+    margin: $margin;
+}
