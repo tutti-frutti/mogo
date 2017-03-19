@@ -1,0 +1,20 @@
+.devices {
+    padding-top: 6.563rem;
+    background: url(/assets/img/devices-bg.jpg) center / cover no-repeat;
+    &__tablet {
+        position: relative;
+        margin: 0 auto;
+        max-width: 477px;
+        width: 100%;
+        height: 582px;
+        background: url(/assets/img/devices-tablet.png) center / cover no-repeat;
+    }
+    &__mobile {
+        position: absolute;
+        right: -120px;
+        bottom: -80px;
+        width: 210px;
+        height: 460px;
+        background: url(/assets/img/devices-mobile.png) center / cover no-repeat;
+    }
+}

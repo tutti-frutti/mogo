@@ -1,0 +1,54 @@
+.service {
+    padding: 6.250em 0em 6.560em;
+    &__list {
+        font-size: 0;
+        text-align: center;
+        &._decor {
+            padding-bottom: 50px;
+            border-bottom: 1px solid #e5e5e5;
+            @media #{$mobile} {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+        }
+        &._pt {
+            padding-top: 50px;
+            @media #{$mobile} {
+                padding-top: 0;
+            }
+        }
+        li {
+            display: inline-block;
+            width: 33%;
+            vertical-align: top;
+            text-align: left;
+            @media #{$mobile} {
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    }
+    &__ic,
+    &__descr {
+        display: inline-block;
+        vertical-align: top;
+    }
+    &__ic {
+        width: 20%;
+        text-align: center;
+    }
+    &__descr {
+        width: 78%;
+        h4 {
+            @include monst(0.875rem, 0.875rem);
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            color: #333333;
+        }
+        p {
+            @include rob(0.9375rem, 1.5rem);
+            color: #999999;
+        }
+    }
+}

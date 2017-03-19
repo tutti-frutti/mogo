@@ -129,7 +129,8 @@ module.exports = function (grunt) {
                 // файлы для склеивания
                 src: [
                     'node_modules/fancybox/dist/js/jquery.fancybox.pack.js',
-                    'node_modules/slick-carousel/slick/slick.js'
+                    'node_modules/slick-carousel/slick/slick.js',
+                    'node_modules/jquery-slimscroll/jquery.slimscroll.min.js'
                 ],
                 // где будут находиться склеенные файлы
                 dest: 'assets/js/project.js'

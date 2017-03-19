@@ -1,0 +1,37 @@
+.numbers {
+    background: #95e1d3;
+    &__list {
+        font-size: 0;
+        li {
+            padding: 80px 0;
+            display: inline-block;
+            width: 20%;
+            vertical-align: top;
+            border-left: 1px solid #b5eae0;
+            @media #{$mobile} {
+                display: block;
+                padding: 30px 0;
+                width: 100%;
+                border-left: none;
+                border-top: 1px solid #b5eae0;
+            }
+            &:last-child {
+                border-right: 1px solid #b5eae0;
+            }
+            span {
+                display: block;
+                text-align: center;
+                &:first-child {
+                    @include monst-b(4.5rem,4.5rem);
+                    padding-bottom: 25px;
+                    color: #fff;
+                }
+                &:last-child {
+                    @include monst(0.875rem,0.875rem);
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

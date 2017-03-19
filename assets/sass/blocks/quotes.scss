@@ -1,0 +1,52 @@
+.quotes {
+    background: #f8f8f8;
+    &__wrapper {
+        padding: 4.375rem 6.25rem;
+    }
+    &__ic {
+        position: relative;
+        display: inline-block;
+        margin-right: 3.75rem;
+        vertical-align: top;
+        width: 150px;
+        height: 150px;
+        border: 2px solid $l-green;
+        img {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    &__cite {
+        display: inline-block;
+        width: calc(100% - 230px);
+        vertical-align: top;
+        @media #{$mobile} {
+            width: 100%;
+        }
+        p {
+            @include rob(1.5rem, 2.25rem);
+            padding-bottom: 20px;
+            font-style: italic;
+            color: $text;
+            &:last-child {
+                @include ks(1.5rem, 1.5rem);
+                position: relative;
+                padding-left: 70px;
+                color: #000;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 10px;
+                    width: 60px;
+                    height: 3px;
+                    background: #f38181;
+                }
+            }
+        }
+    }
+}

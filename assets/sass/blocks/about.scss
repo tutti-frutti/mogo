@@ -2,6 +2,7 @@
     padding: 6.250em 0 6.560em;
     &__descr {
         @include rob(0.875rem, 1.25rem);
+        padding-bottom: 5em;
         margin: 0 auto;
         max-width: 960px;
         width: 100%;

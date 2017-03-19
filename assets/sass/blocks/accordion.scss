@@ -1,0 +1,56 @@
+.accordion {
+    &__item {
+        display: block;
+        margin-bottom: 10px;
+        padding: 15px;
+        height: 60px;
+        border: 1px solid #e5e5e5;
+        &:last-of-type {
+//            margin-bottom: 0;
+        }
+        a {
+            display: block;
+            text-align: left;
+            &:hover {
+                span {
+                    color: #95e1d3;
+                }
+            }
+            i {
+                display: inline-block;
+                margin-right: 15px;
+                vertical-align: middle;
+                text-align: center;
+            }
+            span {
+                @include monst(0.875rem, 0.875rem);
+                display: inline-block;
+                vertical-align: middle;
+                text-transform: uppercase;
+                color: #333333;
+                transition: .3s;
+            }
+        }
+    }
+    &__text {
+        @include rob(0.9375rem, 1.5rem);
+        padding: 0 10px;
+        margin-top: -11px;
+        margin-bottom: 10px;
+        max-height: 180px;
+        font-style: italic;
+        text-align: left;
+        overflow: hidden;
+        border: 1px solid #e5e5e5;
+        color: #999999;
+        p {
+            padding: 10px;
+        }
+        &.active {
+            display: block;
+        }
+        .js-scroll {
+//            height: 180px;
+        }
+    }
+}
