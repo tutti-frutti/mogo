@@ -385,6 +385,59 @@
           width: 60px;
           height: 3px;
           background: #f38181; }
+  .quotes .left-arr,
+  .quotes .right-arr {
+    position: absolute;
+    top: 45%;
+    left: 2em;
+    cursor: pointer;
+    z-index: 10; }
+  .quotes .right-arr {
+    left: auto;
+    right: 2rem; }
+
+.team__list {
+  margin: 0 -15px;
+  font-size: 0;
+  text-align: center; }
+  .team__list li {
+    display: inline-block;
+    margin: 15px;
+    max-width: 380px;
+    width: 100%;
+    vertical-align: top;
+    background: #95e1d3; }
+    .team__list li a {
+      position: relative;
+      display: block;
+      cursor: pointer; }
+      .team__list li a::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url(/assets/img/team-hover.jpg) 0 0 no-repeat;
+        opacity: 0;
+        z-index: 1;
+        transition: .3s; }
+      .team__list li a:hover::before {
+        left: -10px;
+        top: -10px;
+        opacity: .8; }
+      .team__list li a:hover img {
+        transform: translate(-10px, -10px); }
+      .team__list li a span {
+        display: block;
+        text-align: left;
+        font-size: 14px; }
+      .team__list li a img {
+        height: 100%;
+        transition: .3s; }
+
+.team__descr {
+  background: #fff; }
 
 html {
   font-size: 16px; }

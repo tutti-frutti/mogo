@@ -11,6 +11,8 @@ $(document).ready(function () {
     $('.js-quotes').slick({
         arrows: true,
         autoplay: true,
+        prevArrow: '<img class="left-arr" src="assets/img/ic-arr-left.png">',
+        nextArrow: '<img class="right-arr" src="assets/img/ic-arr-right.png">',
     });
 
     (function ($) {
