@@ -37,18 +37,52 @@
                     }
                 }
                 span {
-                    display: block;
-                    text-align: left;
+                    display: inline-block;
+                    width: 100%;
                     font-size: 14px;
                 }
                 img {
-                    height: 100%;
                     transition: .3s;
                 }
             }
         }
     }
     &__descr {
+        margin-top: -4px;
+        text-align: center;
         background: #fff;
+    }
+    &__name {
+        @include monst(0.875rem, 0.875rem);
+        padding: 1.875rem 0 0.75rem;
+        text-transform: uppercase;
+        color: $text;
+    }
+    &__position {
+        @include rob(0.9375rem, 1.5rem);
+        font-style: italic;
+        color: $text;
+    }
+    &__social {
+        display: block;
+        background: transparent;
+        a {
+            display: inline-block;
+            width: 56px;
+            height: 56px;
+            text-align: center;
+            background: #fce38a;
+            font-size: 14px;
+            img {
+                display: inline-block;
+                height: auto;
+            }
+            &:hover {
+                img {
+                transform: translate(0px, 0px);
+                    
+                }
+            }
+        }
     }
 }

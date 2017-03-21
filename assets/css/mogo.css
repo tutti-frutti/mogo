@@ -429,15 +429,51 @@
       .team__list li a:hover img {
         transform: translate(-10px, -10px); }
       .team__list li a span {
-        display: block;
-        text-align: left;
+        display: inline-block;
+        width: 100%;
         font-size: 14px; }
       .team__list li a img {
-        height: 100%;
         transition: .3s; }
 
 .team__descr {
+  margin-top: -4px;
+  text-align: center;
   background: #fff; }
+
+.team__name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  padding: 1.875rem 0 0.75rem;
+  text-transform: uppercase;
+  color: #999999; }
+
+.team__position {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  font-style: italic;
+  color: #999999; }
+
+.team__social {
+  display: block;
+  background: transparent; }
+  .team__social a {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    background: #fce38a;
+    font-size: 14px; }
+    .team__social a img {
+      display: inline-block;
+      height: auto; }
+    .team__social a:hover img {
+      transform: translate(0px, 0px); }
 
 html {
   font-size: 16px; }
