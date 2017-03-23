@@ -1,0 +1,25 @@
+.works {
+    ul {
+        font-size: 0;
+        li {
+            float: left;
+            width: 25%;
+            vertical-align: top;
+            div {
+                width: 100%;
+                height: 390px;
+                overflow: hidden;
+                a {
+                    img {
+                        display: block;
+                    }
+                }
+                &.big {
+                    max-width: 480px;
+                    width: 100%;
+                    height: 780px;
+                }
+            }
+        }
+    }
+}
