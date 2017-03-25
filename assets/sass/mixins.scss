@@ -35,3 +35,8 @@ line-height: $line-height;
     list-style: none;
     margin: $margin;
 }
+
+@mixin vh($width, $height) {
+    width: $width;
+    height: $height;
+}

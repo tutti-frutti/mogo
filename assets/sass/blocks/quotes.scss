@@ -11,6 +11,14 @@
         width: 150px;
         height: 150px;
         border: 2px solid $l-green;
+        &._round-logo {
+            width: 210px;
+            height: 210px;
+            vertical-align: middle;
+            border: none;
+            border-radius: 50%;
+            overflow: hidden;
+        }
         img {
             position: absolute;
             margin: auto;
@@ -24,6 +32,10 @@
         display: inline-block;
         width: calc(100% - 230px);
         vertical-align: top;
+        &._width {
+            vertical-align: middle;
+            width: calc(100% - 290px);
+        }
         @media #{$mobile} {
             width: 100%;
         }

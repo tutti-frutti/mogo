@@ -1,0 +1,80 @@
+.blog {
+    padding: 6.25rem 0;
+    ul {
+        font-size: 0;
+        margin: 0 -15px;
+        li {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 15px;
+            max-width: 380px;
+            width: 100%;
+            &:hover {
+                .blog__thumb {
+                    img {
+                        transform: scale(1.03);
+                    }
+                }
+            }
+        }
+    }
+    &__thumb {
+        position: relative;
+        max-width: 380px;
+        width: 100%;
+        height: 240px;
+        overflow: hidden;
+        img {
+            transition: .5s;
+        }
+    }
+    &__date {
+        @include monst-b( 1.875rem, 1.875rem);
+        position: absolute;
+        display: block;
+        padding: 10px;
+        bottom: 10px;
+        left: -10px;
+        color: #fff;
+        background: $l-green;
+        span {
+            @include rob(15px, 18px);
+            display: block;
+            font-style: italic;
+        }
+    }
+    &__descr {
+        display: block;
+        padding: 15px 0;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    &__title {
+        @include monst(14px, 14px);
+        display: block;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        color: #333333;
+    }
+    &__text {
+        @include rob(15px, 24px);
+        color: $text;
+    }
+    &__stat {
+        span {
+            i {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            u {
+                @include rob(15px, 24px);
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0 15px 0 5px;
+                text-decoration: none;
+                font-style: italic;
+                color: $text;
+            }
+        }
+    }
+}
