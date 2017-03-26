@@ -1,0 +1,124 @@
+.mogo {
+    display: inline-block;
+    padding-right: 1.88rem;
+    width: 40%;
+    vertical-align: top;
+    h2 {
+        @include monst-b(2.88rem, 2.88rem);
+        text-transform: capitalize;
+        color: #cccccc;
+    }
+    p {
+        @include rob(14px, 1.5rem);
+        padding: 1.88rem 0 2.7rem;
+        color: $text;
+    }
+    &__followers {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e5e5e5;
+        span {
+            &:first-child {
+                @include monst-b(18px, 15px);
+                color: #333333;
+            }
+            &:last-child {
+                @include monst(14px, 15px);
+                color: #333333;
+            }
+        }
+    }
+    &__social {
+        margin: 1rem 0 1.88rem;
+        span {
+            @include rob(15px, 1.5rem);
+            display: inline-block;
+            vertical-align: middle;
+            font-style: italic;
+            color: $text;
+        }
+        ul {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0;
+            li {
+                display: inline-block;
+                margin: 0 0.5rem;
+                vertical-align: top;
+                a {
+                    transition: .3s;
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+    &__subscribe {
+        ::-webkit-input-placeholder {
+            font-family: 'Roboto';
+            color: #cccccc;
+            font-size: 15px;
+            font-style: italic;
+            text-overflow: ellipsis;
+        }
+        ::-moz-placeholder {
+            font-family: 'Roboto';
+            color: #cccccc;
+            font-size: 15px;
+            font-style: italic;
+            text-overflow: ellipsis;
+        }
+        /* Firefox 19+ */
+        :-moz-placeholder {
+            font-family: 'Roboto';
+            color: #cccccc;
+            font-size: 15px;
+            font-style: italic;
+            text-overflow: ellipsis;
+        }
+        /* Firefox 18- */
+        :-ms-input-placeholder {
+            font-family: 'Roboto';
+            color: #cccccc;
+            font-size: 15px;
+            font-style: italic;
+            text-overflow: ellipsis;
+        }
+    }
+    &__field {
+        position: relative;
+        max-width: 380px;
+        width: 100%;
+        input {
+            @include rob(15px, 2.5rem);
+            width: 230px;
+            height: 40px;
+            padding: 0 15px;
+            border: 1px solid #e7e7e7;
+            outline: none;
+            line-height: 40px;
+            color: $text;
+            background: #fff;
+            transition: .3s;
+            &:focus {
+                border: 1px solid silver;
+            }
+        }
+        button {
+            @include monst-b(14px, 14px);
+            position: absolute;
+            padding: 0.81rem 1.88rem;
+            right: 8px;
+            top: 0;
+            border: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            color: #fff;
+            background: #95e1d3;
+            transition: .3s;
+            &:hover {
+                background: darken(#95e1d3, 10%);
+            }
+        }
+    }
+}

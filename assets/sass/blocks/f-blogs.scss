@@ -1,0 +1,48 @@
+.f-blogs {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    h5 {
+        @include monst(14px, 14px);
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
+        color: $text;
+    }
+    ul {
+        li {
+            margin-bottom: 1.88rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__thumb {
+        display: inline-block;
+        margin-right: 1.25rem;
+        width: 119px;
+        height: 79px;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+    &__descr {
+        display: inline-block;
+        width: 210px;
+        vertical-align: middle;
+    }
+    &__title {
+        @include monst(12px, 18px);
+        display: block;
+        text-transform: uppercase;
+        color: #333333;
+        transition: .3s;
+        &:hover {
+            text-decoration: underline;
+            color: darken(#333333, 20%);
+        }
+    }
+    &__date {
+        @include rob(13px,14px);
+        display: block;
+        color: #999999;
+    }
+}

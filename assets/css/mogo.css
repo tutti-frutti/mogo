@@ -763,6 +763,249 @@
     font-style: italic;
     color: #999999; }
 
+.map {
+  padding: 3.13rem 0;
+  background: url(/assets/img/map-bg.jpg) center/cover no-repeat; }
+  .map__block {
+    margin: 0 auto;
+    min-width: 150px;
+    text-align: center; }
+    .map__block p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      position: relative;
+      padding-bottom: 1.25rem;
+      text-transform: uppercase;
+      color: #f38181; }
+      .map__block p::before {
+        position: absolute;
+        content: '';
+        margin-left: -30px;
+        left: 50%;
+        bottom: 0;
+        width: 60px;
+        height: 3px;
+        background: #f38181; }
+
+.footer {
+  padding: 5rem 0 3.75rem;
+  background: #f8f8f8; }
+  .footer__wrapper {
+    font-size: 0; }
+
+.mogo {
+  display: inline-block;
+  padding-right: 1.88rem;
+  width: 40%;
+  vertical-align: top; }
+  .mogo h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2.88rem;
+    line-height: 2.88rem;
+    text-transform: capitalize;
+    color: #cccccc; }
+  .mogo p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5rem;
+    padding: 1.88rem 0 2.7rem;
+    color: #999999; }
+  .mogo__followers {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5; }
+    .mogo__followers span:first-child {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      font-size: 18px;
+      line-height: 15px;
+      color: #333333; }
+    .mogo__followers span:last-child {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 15px;
+      color: #333333; }
+  .mogo__social {
+    margin: 1rem 0 1.88rem; }
+    .mogo__social span {
+      font-family: 'Roboto', sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 15px;
+      line-height: 1.5rem;
+      display: inline-block;
+      vertical-align: middle;
+      font-style: italic;
+      color: #999999; }
+    .mogo__social ul {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 0; }
+      .mogo__social ul li {
+        display: inline-block;
+        margin: 0 0.5rem;
+        vertical-align: top; }
+        .mogo__social ul li a {
+          transition: .3s; }
+          .mogo__social ul li a:hover {
+            opacity: 0.5; }
+  .mogo__subscribe {
+    /* Firefox 19+ */
+    /* Firefox 18- */ }
+    .mogo__subscribe ::-webkit-input-placeholder {
+      font-family: 'Roboto';
+      color: #cccccc;
+      font-size: 15px;
+      font-style: italic;
+      text-overflow: ellipsis; }
+    .mogo__subscribe ::-moz-placeholder {
+      font-family: 'Roboto';
+      color: #cccccc;
+      font-size: 15px;
+      font-style: italic;
+      text-overflow: ellipsis; }
+    .mogo__subscribe :-moz-placeholder {
+      font-family: 'Roboto';
+      color: #cccccc;
+      font-size: 15px;
+      font-style: italic;
+      text-overflow: ellipsis; }
+    .mogo__subscribe :-ms-input-placeholder {
+      font-family: 'Roboto';
+      color: #cccccc;
+      font-size: 15px;
+      font-style: italic;
+      text-overflow: ellipsis; }
+  .mogo__field {
+    position: relative;
+    max-width: 380px;
+    width: 100%; }
+    .mogo__field input {
+      font-family: 'Roboto', sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 15px;
+      line-height: 2.5rem;
+      width: 230px;
+      height: 40px;
+      padding: 0 15px;
+      border: 1px solid #e7e7e7;
+      outline: none;
+      line-height: 40px;
+      color: #999999;
+      background: #fff;
+      transition: .3s; }
+      .mogo__field input:focus {
+        border: 1px solid silver; }
+    .mogo__field button {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 14px;
+      position: absolute;
+      padding: 0.81rem 1.88rem;
+      right: 8px;
+      top: 0;
+      border: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: #fff;
+      background: #95e1d3;
+      transition: .3s; }
+      .mogo__field button:hover {
+        background: #6dd6c3; }
+
+.f-blogs {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top; }
+  .f-blogs h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    color: #999999; }
+  .f-blogs ul li {
+    margin-bottom: 1.88rem; }
+    .f-blogs ul li:last-child {
+      margin-bottom: 0; }
+  .f-blogs__thumb {
+    display: inline-block;
+    margin-right: 1.25rem;
+    width: 119px;
+    height: 79px;
+    overflow: hidden;
+    vertical-align: middle; }
+  .f-blogs__descr {
+    display: inline-block;
+    width: 210px;
+    vertical-align: middle; }
+  .f-blogs__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: #333333;
+    transition: .3s; }
+    .f-blogs__title:hover {
+      text-decoration: underline;
+      color: black; }
+  .f-blogs__date {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 14px;
+    display: block;
+    color: #999999; }
+
+.inst {
+  display: inline-block;
+  padding-left: 5.31rem;
+  width: 30%;
+  vertical-align: top; }
+  .inst h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    color: #999999; }
+  .inst ul {
+    margin-bottom: 13px;
+    font-size: 0; }
+    .inst ul li {
+      display: inline-block;
+      margin: 0px 1px; }
+  .inst a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 13px;
+    display: block;
+    color: #999999; }
+    .inst a:hover {
+      text-decoration: underline; }
+
 html {
   font-size: 16px; }
   @media (min-width: 768px) and (max-width: 1025px) {
