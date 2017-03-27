@@ -1,5 +1,8 @@
 .about {
     padding: 6.250em 0 6.560em;
+    @media #{$mobile} {
+        padding: 30px 0;
+    }
     &__descr {
         @include rob(0.875rem, 1.25rem);
         padding-bottom: 5em;
@@ -8,6 +11,9 @@
         width: 100%;
         text-align: center;
         color: #999999;
+        @media #{$mobile} {
+        padding-bottom: 30px;
+    }
     }
     &__list {
         text-align: center;

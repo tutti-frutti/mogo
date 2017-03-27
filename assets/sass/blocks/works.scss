@@ -1,10 +1,16 @@
 .works {
     padding-top: 6.25rem;
+    @media #{$mobile} {
+        padding-top: 30px;
+    }
     &__descr {
         @include rob(0.9375rem, 1.5rem);
         margin-bottom: 5.625rem !important;
         text-align: center;
         color: #999999;
+        @media #{$mobile} {
+            margin-bottom: 30px !important;
+        }
     }
     &__add {
         @include monst(14px, 14px);
@@ -33,6 +39,10 @@
             float: left;
             width: 25%;
             vertical-align: top;
+            @media #{$mobile} {
+                float: none;
+                width: 100%;
+            }
             div {
                 overflow: hidden;
                 &:hover {

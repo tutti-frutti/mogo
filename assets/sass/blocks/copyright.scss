@@ -1,0 +1,9 @@
+.copyright {
+        text-align: center;
+    p {
+        @include monst(14px, 14px);
+        display: inline-block;
+        padding: 1.25rem 0;
+        color: $text;
+    }
+}

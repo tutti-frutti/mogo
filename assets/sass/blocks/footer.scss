@@ -1,7 +1,9 @@
 .footer {
-    padding: 5rem 0 3.75rem;
+    padding: 5rem 0 0;
     background: #f8f8f8;
     &__wrapper {
+        padding-bottom: 3.13rem;
+        border-bottom: 1px solid #e5e5e5;
         font-size: 0;
     }
 }

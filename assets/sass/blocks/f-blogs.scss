@@ -2,6 +2,10 @@
     display: inline-block;
     width: 30%;
     vertical-align: top;
+    @media #{$mobile} {
+        width: 100%;
+        text-align: center;
+    }
     h5 {
         @include monst(14px, 14px);
         margin-bottom: 2.5rem;
@@ -23,11 +27,17 @@
         height: 79px;
         overflow: hidden;
         vertical-align: middle;
+        @media #{$mobile} {
+            margin-bottom: 15px;
+        }
     }
     &__descr {
         display: inline-block;
         width: 210px;
         vertical-align: middle;
+        @media #{$mobile} {
+            width: 100%;
+        }
     }
     &__title {
         @include monst(12px, 18px);
@@ -41,7 +51,7 @@
         }
     }
     &__date {
-        @include rob(13px,14px);
+        @include rob(13px, 14px);
         display: block;
         color: #999999;
     }

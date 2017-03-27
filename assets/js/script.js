@@ -7,7 +7,7 @@ $(document).ready(function () {
         cssEase: 'linear',
         speed: 3000
     });
-    
+
     $('.js-quotes').slick({
         arrows: true,
         autoplay: true,
@@ -39,6 +39,18 @@ $(document).ready(function () {
         color: '#95e1d3',
         railVisible: true,
         opacity: '1'
+    });
+
+    //search block - open / close
+    $('li.js-search > a ').on('click', function () {
+        $('.js-search-block').toggleClass('open');
+    });
+    //search block - close, when click outside the block
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest(".js-search").length) {
+            $('.js-search-block').removeClass('open');
+        }
+        e.stopPropagation();
     });
 
 });

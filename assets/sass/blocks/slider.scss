@@ -12,9 +12,16 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        @media #{$mobile} {
+            top: 10%;
+            transform: translate(-50%, 0);
+        }
         p {
             @include ks(4.5rem, normal);
             color: #fff;
+            @media #{$mobile} {
+                font-size: 16px;
+            }
         }
         h2 {
             @include monst-b(9.375rem, 9.375rem);
@@ -23,6 +30,10 @@
             margin-bottom: 0.5em;
             text-transform: uppercase;
             color: #fff;
+            @media #{$mobile} {
+                font-size: 20px;
+                line-height: 20px;
+            }
             &::before {
                 position: absolute;
                 content: '';

@@ -16,5 +16,8 @@
         width: 210px;
         height: 460px;
         background: url(/assets/img/devices-mobile.png) center / cover no-repeat;
+        @media #{$mobile} {
+            display: none;
+        }
     }
 }

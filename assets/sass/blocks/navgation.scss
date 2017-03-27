@@ -1,4 +1,103 @@
-.navgation {
-    position: relative;
+.navigation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: none;
     z-index: 100;
+    &__wrapper {
+        padding-top: 1.88rem;
+        max-width: 1200px;
+        font-size: 0;
+    }
+    &__logo {
+        @include monst-b(1.88rem, 1.88rem);
+        display: inline-block;
+        vertical-align: middle;
+        width: 10%;
+        a {
+            color: #fff;
+        }
+    }
+    &__nav {
+        display: inline-block;
+        width: 90%;
+        vertical-align: middle;
+        text-align: right;
+        ul {
+            font-size: 0;
+            li {
+                display: inline-block;
+                vertical-align: top;
+                &.js-search {
+                    position: relative;
+                    .js-search-block {
+                        display: none;
+                        position: absolute;
+                        padding: 1rem;
+                        max-width: 320px;
+                        bottom: -55px;
+                        right: 0;
+                        background: rgba(161, 40, 38, 0.1);
+                        form {
+                            position: relative;
+                            input {
+                                @include rob(14px,25px);
+                                padding: 0 60px 0 10px;
+                                height: 25px;
+                                border: 1px solid transparent;
+                                outline: none;
+                                color: #383838;
+                                background: #fff;
+                            }
+                            button {
+                                @include rob(14px,25px);
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                height: 100%;
+                                border: none;
+                                cursor: pointer;
+                                color: #fff;
+                                background: #73201f;
+                                &:hover {
+                                    background: lighten(#73201f, 15%);
+                                }
+                            }
+                        }
+                        &.open {
+                            display: block;
+                            z-index: 100;
+                        }
+                    }
+                }
+                &.nav-current {
+                    a {
+                        position: relative;
+                        color: #fce38a;
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            height: 3px;
+                            background: #fce38a;
+                        }
+                    }
+                }
+                a {
+                    @include monst(14px, 14px);
+                    display: block;
+                    margin: 0 1.56rem;
+                    padding: 0.63rem 0;
+                    color: #fff;
+                    text-transform: uppercase;
+                    transition: .3s;
+                    &:hover {
+                        color: #fce38a;
+                    }
+                }
+            }
+        }
+    }
 }

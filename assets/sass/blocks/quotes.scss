@@ -11,6 +11,10 @@
         width: 150px;
         height: 150px;
         border: 2px solid $l-green;
+        @media #{$mobile} {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
         &._round-logo {
             width: 210px;
             height: 210px;
@@ -18,6 +22,11 @@
             border: none;
             border-radius: 50%;
             overflow: hidden;
+            @media #{$mobile} {
+                display: block;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
         }
         img {
             position: absolute;
@@ -35,6 +44,9 @@
         &._width {
             vertical-align: middle;
             width: calc(100% - 290px);
+            @media #{$mobile} {
+            width: 100%;
+        }
         }
         @media #{$mobile} {
             width: 100%;
@@ -44,6 +56,10 @@
             padding-bottom: 20px;
             font-style: italic;
             color: $text;
+            @media #{$mobile} {
+                font-size: 14px;
+                line-height: 18px;
+            }
             &:last-child {
                 @include ks(1.5rem, 1.5rem);
                 position: relative;

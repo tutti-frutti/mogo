@@ -3,6 +3,10 @@
     padding-right: 1.88rem;
     width: 40%;
     vertical-align: top;
+    @media #{$mobile} {
+        width: 100%;
+        padding-right: 0;
+    }
     h2 {
         @include monst-b(2.88rem, 2.88rem);
         text-transform: capitalize;

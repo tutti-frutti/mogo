@@ -3,6 +3,10 @@
     padding-left: 5.31rem;
     width: 30%;
     vertical-align: top;
+    @media #{$mobile} {
+        padding-left: 0;
+        width: 100%;
+    }
     h5 {
         @include monst(14px, 14px);
         margin-bottom: 2.5rem;
