@@ -271,7 +271,7 @@
           top: 0;
           width: 100%;
           height: 100%;
-          background: url(/assets/img/ab-hover.jpg) 0 0 no-repeat;
+          background: url(../img/ab-hover.jpg) 0 0 no-repeat;
           opacity: 0;
           z-index: 1;
           transition: .3s; }
@@ -406,7 +406,7 @@
 
 .devices {
   padding-top: 6.563rem;
-  background: url(/assets/img/devices-bg.jpg) center/cover no-repeat; }
+  background: url(../img/devices-bg.jpg) center/cover no-repeat; }
   @media (max-width: 767px) {
     .devices {
       display: none; } }
@@ -416,14 +416,14 @@
     max-width: 477px;
     width: 100%;
     height: 582px;
-    background: url(/assets/img/devices-tablet.png) center/cover no-repeat; }
+    background: url(../img/devices-tablet.png) center/cover no-repeat; }
   .devices__mobile {
     position: absolute;
     right: -120px;
     bottom: -80px;
     width: 210px;
     height: 460px;
-    background: url(/assets/img/devices-mobile.png) center/cover no-repeat; }
+    background: url(../img/devices-mobile.png) center/cover no-repeat; }
     @media (max-width: 767px) {
       .devices__mobile {
         display: none; } }
@@ -659,7 +659,7 @@
           top: 0;
           width: 100%;
           height: 100%;
-          background: url(/assets/img/team-hover.jpg) 0 0 no-repeat;
+          background: url(../img/team-hover.jpg) 0 0 no-repeat;
           opacity: 0;
           z-index: 1;
           transition: .3s; }
@@ -836,37 +836,37 @@
             position: relative;
             width: 100%;
             height: 390px;
-            background: url(/assets/img/gal1.jpg) center/cover no-repeat; }
+            background: url(../img/gal1.jpg) center/cover no-repeat; }
           .works ul li div a.img-2 {
             position: relative;
             width: 100%;
             height: 390px;
-            background: url(/assets/img/gal2.jpg) center/cover no-repeat; }
+            background: url(../img/gal2.jpg) center/cover no-repeat; }
           .works ul li div a.img-3 {
             position: relative;
             width: 100%;
             height: 390px;
-            background: url(/assets/img/gal2.jpg) center/cover no-repeat; }
+            background: url(../img/gal2.jpg) center/cover no-repeat; }
           .works ul li div a.img-4 {
             position: relative;
             width: 100%;
             height: 390px;
-            background: url(/assets/img/gal3.jpg) center/cover no-repeat; }
+            background: url(../img/gal3.jpg) center/cover no-repeat; }
           .works ul li div a.img-5 {
             position: relative;
             width: 100%;
             height: 780px;
-            background: url(/assets/img/gal4.jpg) center/cover no-repeat; }
+            background: url(../img/gal4.jpg) center/cover no-repeat; }
           .works ul li div a.img-6 {
             position: relative;
             width: 100%;
             height: 390px;
-            background: url(/assets/img/gal5.jpg) center/cover no-repeat; }
+            background: url(../img/gal5.jpg) center/cover no-repeat; }
           .works ul li div a.img-7 {
             position: relative;
             width: 100%;
             height: 390px;
-            background: url(/assets/img/gal6.jpg) center/cover no-repeat; }
+            background: url(../img/gal6.jpg) center/cover no-repeat; }
         .works ul li div.big {
           max-width: 480px;
           width: 100%;
@@ -877,7 +877,7 @@
 
 .recalls {
   padding: 6.875rem 0 3.125rem;
-  background: url(/assets/img/recalls-bg.jpg) center/cover no-repeat; }
+  background: url(../img/recalls-bg.jpg) center/cover no-repeat; }
   @media (max-width: 767px) {
     .recalls {
       padding: 30px 0; } }
@@ -1047,7 +1047,7 @@
 
 .map {
   padding: 3.13rem 0;
-  background: url(/assets/img/map-bg.jpg) center/cover no-repeat; }
+  background: url(../img/map-bg.jpg) center/cover no-repeat; }
   .map__block {
     margin: 0 auto;
     min-width: 150px;
