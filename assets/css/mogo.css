@@ -11,6 +11,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .slider__intro {
+      top: 25%;
+      transform: translate(-50%, 0); } }
   @media (max-width: 767px) {
     .slider__intro {
       top: 25%;
@@ -22,6 +26,9 @@
     font-size: 4.5rem;
     line-height: normal;
     color: #fff; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .slider__intro p {
+        font-size: 24px; } }
     @media (max-width: 767px) {
       .slider__intro p {
         font-size: 16px; } }
@@ -36,6 +43,10 @@
     margin-bottom: 0.5em;
     text-transform: uppercase;
     color: #fff; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .slider__intro h2 {
+        font-size: 36px;
+        line-height: 36px; } }
     @media (max-width: 767px) {
       .slider__intro h2 {
         font-size: 20px;
@@ -479,6 +490,9 @@
     margin-bottom: 5.625rem;
     text-align: center;
     color: #999999; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .we-do__descr {
+        margin-bottom: 20px; } }
     @media (max-width: 767px) {
       .we-do__descr {
         margin-bottom: 20px; } }
@@ -499,6 +513,9 @@
   .we-do__img {
     max-width: 560px;
     width: 100%; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .we-do__img {
+        margin-bottom: 15px; } }
   .we-do__acc {
     max-width: 600px;
     width: 100%; }
@@ -612,6 +629,9 @@
     width: 100%;
     vertical-align: top;
     background: #95e1d3; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .team__list li {
+        background: none; } }
     @media (max-width: 767px) {
       .team__list li {
         margin: 0; } }
@@ -657,6 +677,9 @@
   text-align: center;
   color: #999999;
   background: #fff; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .team__descr {
+      padding-bottom: 30px; } }
   @media (max-width: 767px) {
     .team__descr {
       padding-bottom: 30px; } }
@@ -712,7 +735,11 @@
   background: #f8f8f8; }
   .brands ul {
     text-align: justify;
+    -ms-text-justify: inter-ideograph;
     font-size: 0; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .brands ul {
+        text-align: center; } }
     @media (max-width: 767px) {
       .brands ul {
         text-align: center; } }
@@ -728,6 +755,9 @@
 
 .works {
   padding-top: 6.25rem; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .works {
+      padding-top: 30px; } }
   @media (max-width: 767px) {
     .works {
       padding-top: 30px; } }
@@ -740,6 +770,9 @@
     margin-bottom: 5.625rem !important;
     text-align: center;
     color: #999999; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .works__descr {
+        margin-bottom: 30px !important; } }
     @media (max-width: 767px) {
       .works__descr {
         margin-bottom: 30px !important; } }
@@ -769,6 +802,9 @@
       float: left;
       width: 25%;
       vertical-align: top; }
+      @media (min-width: 768px) and (max-width: 1025px) {
+        .works ul li {
+          width: 50%; } }
       @media (max-width: 767px) {
         .works ul li {
           float: none;
@@ -835,6 +871,9 @@
           max-width: 480px;
           width: 100%;
           height: 780px; }
+          @media (min-width: 768px) and (max-width: 1025px) {
+            .works ul li div.big {
+              max-width: none; } }
 
 .recalls {
   padding: 6.875rem 0 3.125rem;
@@ -911,6 +950,9 @@
 
 .blog {
   padding: 6.25rem 0; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .blog {
+      text-align: center; } }
   @media (max-width: 767px) {
     .blog {
       padding: 30px 0 0;
@@ -927,6 +969,9 @@
       margin: 0 15px;
       max-width: 380px;
       width: 100%; }
+      @media (min-width: 768px) and (max-width: 1025px) {
+        .blog ul li {
+          margin: 15px; } }
       @media (max-width: 767px) {
         .blog ul li {
           margin: 0;
@@ -1040,6 +1085,9 @@
   padding-right: 1.88rem;
   width: 40%;
   vertical-align: top; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .mogo {
+      width: 50%; } }
   @media (max-width: 767px) {
     .mogo {
       width: 100%;
@@ -1185,6 +1233,10 @@
   display: inline-block;
   width: 30%;
   vertical-align: top; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .f-blogs {
+      width: 50%;
+      text-align: center; } }
   @media (max-width: 767px) {
     .f-blogs {
       width: 100%;
@@ -1202,6 +1254,9 @@
     margin-bottom: 1.88rem; }
     .f-blogs ul li:last-child {
       margin-bottom: 0; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .f-blogs ul li {
+        text-align: left; } }
   .f-blogs__thumb {
     display: inline-block;
     margin-right: 1.25rem;
@@ -1246,6 +1301,12 @@
   padding-left: 5.31rem;
   width: 30%;
   vertical-align: top; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .inst {
+      padding-left: 0;
+      margin-top: 30px;
+      width: 100%;
+      text-align: center; } }
   @media (max-width: 767px) {
     .inst {
       padding-left: 0;
@@ -1291,9 +1352,6 @@
 
 .b-hamburger {
   display: none; }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    .b-hamburger {
-      display: block; } }
 
 @media (max-width: 767px) {
   .b-hamburger {
@@ -1349,51 +1407,6 @@
         width: 27px;
         background: #fff; } }
 
-@media (min-width: 768px) and (max-width: 1025px) {
-  .b-hamburger {
-    position: absolute;
-    display: inline-block;
-    width: 35px;
-    height: 32px;
-    top: 15px;
-    right: 30px;
-    border: none;
-    border-radius: 2px;
-    outline: none;
-    cursor: pointer;
-    background: transparent;
-    z-index: 150; }
-    .b-hamburger.active {
-      background: transparent; }
-    .b-hamburger span {
-      position: absolute;
-      display: block;
-      width: 35px;
-      height: 3px;
-      font-size: 0;
-      background: #fff; }
-      .b-hamburger span.active {
-        background: transparent; }
-      .b-hamburger span::before {
-        position: absolute;
-        content: '';
-        top: -7px;
-        left: 0;
-        width: 35px;
-        height: 3px;
-        background: #fff;
-        box-shadow: 0 -7px 0 0 #fff;
-        transition: .3s; }
-      .b-hamburger span::after {
-        position: absolute;
-        content: '';
-        top: 7px;
-        left: 0;
-        width: 35px;
-        height: 3px;
-        background: #fff;
-        transition: .3s; } }
-
 html {
   font-size: 16px; }
   @media (min-width: 768px) and (max-width: 1025px) {
@@ -1425,7 +1438,8 @@ a {
   text-decoration: none; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  border: none; }
 
 * {
   box-sizing: border-box; }

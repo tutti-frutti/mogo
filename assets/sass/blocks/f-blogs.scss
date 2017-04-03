@@ -2,6 +2,10 @@
     display: inline-block;
     width: 30%;
     vertical-align: top;
+    @media #{$tablet} {
+        width: 50%;
+        text-align: center;
+    }
     @media #{$mobile} {
         width: 100%;
         text-align: center;
@@ -17,6 +21,9 @@
             margin-bottom: 1.88rem;
             &:last-child {
                 margin-bottom: 0;
+            }
+            @media #{$tablet} {
+                text-align: left;
             }
         }
     }

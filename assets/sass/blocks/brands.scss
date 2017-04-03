@@ -3,7 +3,11 @@
     background: #f8f8f8;
     ul {
         text-align: justify;
+        -ms-text-justify: inter-ideograph;
         font-size: 0;
+        @media #{$tablet} {
+            text-align: center;
+        }
         @media #{$mobile} {
             text-align: center;
         }

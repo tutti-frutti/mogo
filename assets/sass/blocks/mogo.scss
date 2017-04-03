@@ -3,6 +3,9 @@
     padding-right: 1.88rem;
     width: 40%;
     vertical-align: top;
+    @media #{$tablet} {
+        width: 50%;
+    }
     @media #{$mobile} {
         width: 100%;
         padding-right: 0;

@@ -33,13 +33,13 @@ $(document).ready(function () {
 
     })(jQuery);
 
-    $('.js-scroll').slimScroll({
-        height: '180px',
-        size: '5px',
-        color: '#95e1d3',
-        railVisible: true,
-        opacity: '1'
-    });
+//    $('.js-scroll').slimScroll({
+//        height: '180px',
+//        size: '5px',
+//        color: '#95e1d3',
+//        railVisible: true,
+//        opacity: '1'
+//    });
 
     //search block - open / close
     $('li.js-search > a ').on('click', function () {

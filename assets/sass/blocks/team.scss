@@ -17,6 +17,9 @@
             width: 100%;
             vertical-align: top;
             background: #95e1d3;
+            @media #{$tablet} {
+                background: none;
+            }
             @media #{$mobile} {
             margin: 0;
         }
@@ -70,6 +73,9 @@
         text-align: center;
         color: $text;
         background: #fff;
+        @media #{$tablet} {
+            padding-bottom: 30px;
+        }
         @media #{$mobile} {
             padding-bottom: 30px;
         }

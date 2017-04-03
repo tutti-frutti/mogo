@@ -12,6 +12,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        @media #{$tablet} {
+            top: 25%;
+            transform: translate(-50%, 0);
+        }
         @media #{$mobile} {
             top: 25%;
             transform: translate(-50%, 0);
@@ -19,6 +23,9 @@
         p {
             @include ks(4.5rem, normal);
             color: #fff;
+            @media #{$tablet} {
+                font-size: 24px;
+            }
             @media #{$mobile} {
                 font-size: 16px;
             }
@@ -30,6 +37,10 @@
             margin-bottom: 0.5em;
             text-transform: uppercase;
             color: #fff;
+            @media #{$tablet} {
+                font-size: 36px;
+                line-height: 36px;
+            }
             @media #{$mobile} {
                 font-size: 20px;
                 line-height: 20px;
