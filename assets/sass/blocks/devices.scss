@@ -1,6 +1,9 @@
 .devices {
     padding-top: 6.563rem;
     background: url(/assets/img/devices-bg.jpg) center / cover no-repeat;
+    @media #{$mobile} {
+        display: none;
+    }
     &__tablet {
         position: relative;
         margin: 0 auto;

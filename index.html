@@ -14,24 +14,29 @@
 
 <body>
 
+    <button type="button" class="b-hamburger js-humburger">
+        <span></span>
+    </button>
+
     <header style="position: relative;">
         <div class="navigation center">
             <div class="navigation__wrapper">
                 <div class="navigation__logo">
                     <a href="#">MoGo</a>
                 </div>
-                <nav class="navigation__nav">
+                <nav class="navigation__nav mobile-view">
                     <ul>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Service</a></li>
                         <li><a href="#">Work</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li class="nav-current"><a href="#">Contact</a></li>
-                        <li class="js-search"><a href="#"><img src="assets/img/search-ic.png" alt="search"></a>
+                        <li><a href="#" class="nav-current">Contact</a></li>
+                        <li class="js-search">
+                            <a href="#"><img src="assets/img/search-ic.png" alt="search"></a>
                             <div class="js-search-block">
                                 <form action="post">
-                                  <input type="text" name="search">
-                                  <button type="submit">Search</button>  
+                                    <input type="text" name="search">
+                                    <button type="submit">Search</button>
                                 </form>
                             </div>
                         </li>

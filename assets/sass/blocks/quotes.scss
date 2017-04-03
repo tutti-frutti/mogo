@@ -12,8 +12,8 @@
         height: 150px;
         border: 2px solid $l-green;
         @media #{$mobile} {
-            margin-right: 0;
-            margin-bottom: 15px;
+            display: block;
+            margin: 0 auto 15px;
         }
         &._round-logo {
             width: 210px;
@@ -24,8 +24,9 @@
             overflow: hidden;
             @media #{$mobile} {
                 display: block;
-                margin-right: 0;
-                margin-bottom: 15px;
+                width: 160px;
+                height: 160px;
+                margin: 0 auto 15px;
             }
         }
         img {

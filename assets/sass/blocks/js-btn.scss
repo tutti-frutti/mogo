@@ -1,0 +1,133 @@
+.b-hamburger {
+    display: none;
+    @media #{$tablet} {
+    display: block;
+}
+}
+
+@media #{$mobile} {
+.b-hamburger {
+    position: absolute;
+    display: inline-block;
+    width: 35px;
+    height: 32px;
+    top: 15px;
+    right: 30px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    z-index: 150;
+    &.active {
+            background: transparent;
+        }
+    span {
+        position: absolute;
+        display: block;
+        width: 35px;
+        height: 3px;
+        font-size: 0;
+        background: #fff;
+        &.active {
+            background: transparent;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            top: -7px;
+            left: 0;
+            width: 35px;
+            height: 3px;
+            background: #fff;
+            transition: .3s;
+        }
+        &.active::before {
+            transform: rotate(-45deg) translate(0px, 7px);
+            top: -4px;
+            left: 1px;
+            width: 27px;
+            background: #fff;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            top: 7px;
+            left: 0;
+            width: 35px;
+            height: 3px;
+            background: #fff;
+            transition: .3s;
+        }
+        &.active::after {
+            transform: rotate(45deg) translate(0px, -8px);
+            width: 27px;
+            background: #fff;
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+   .b-hamburger {
+    position: absolute;
+    display: inline-block;
+    width: 35px;
+    height: 32px;
+    top: 15px;
+    right: 30px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    z-index: 150;
+    &.active {
+            background: transparent;
+        }
+    span {
+        position: absolute;
+        display: block;
+        width: 35px;
+        height: 3px;
+        font-size: 0;
+        background: #fff;
+        &.active {
+            background: transparent;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            top: -7px;
+            left: 0;
+            width: 35px;
+            height: 3px;
+            background: #fff;
+            box-shadow: 0 -7px 0 0 #fff;
+            transition: .3s;
+        }
+        &.active::before {
+//            transform: rotate(-45deg) translate(1px, 6px);
+//            top: -4px;
+//            left: 1px;
+//            width: 27px;
+//            background: #fff;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            top: 7px;
+            left: 0;
+            width: 35px;
+            height: 3px;
+            background: #fff;
+            transition: .3s;
+        }
+        &.active::after {
+//            transform: rotate(45deg) translate(0px, -8px);
+//            width: 27px;
+//            background: #fff;
+            }
+        }
+    }
+}

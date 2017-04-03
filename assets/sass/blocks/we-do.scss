@@ -8,6 +8,9 @@
         margin-bottom: 5.625rem;
         text-align: center;
         color: #999999;
+        @media #{$mobile} {
+            margin-bottom: 20px;
+        }
     }
     &__inner {
         margin: 0 -30px;

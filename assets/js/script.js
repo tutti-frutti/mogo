@@ -52,5 +52,11 @@ $(document).ready(function () {
         }
         e.stopPropagation();
     });
+    
+    $(".b-hamburger").click(function (event) {
+        event.preventDefault();
+        $("span").toggleClass("active");
+        $(".mobile-view").toggleClass("js-toggle");
+    });
 
 });

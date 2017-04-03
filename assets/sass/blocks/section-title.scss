@@ -22,5 +22,8 @@
             height: 3px;
             background: #f38181;
         }
+        @media #{$mobile} {
+            padding-bottom: 20px;
+        }
     }
 }

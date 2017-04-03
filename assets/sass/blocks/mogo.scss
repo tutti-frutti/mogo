@@ -6,6 +6,7 @@
     @media #{$mobile} {
         width: 100%;
         padding-right: 0;
+        text-align: center;
     }
     h2 {
         @include monst-b(2.88rem, 2.88rem);
@@ -93,6 +94,10 @@
         position: relative;
         max-width: 380px;
         width: 100%;
+        @media #{$mobile} {
+            margin: 0 auto;
+            text-align: center;
+        }
         input {
             @include rob(15px, 2.5rem);
             width: 230px;
@@ -106,6 +111,9 @@
             transition: .3s;
             &:focus {
                 border: 1px solid silver;
+            }
+            @media #{$mobile} {
+                width: 90%;
             }
         }
         button {
@@ -122,6 +130,11 @@
             transition: .3s;
             &:hover {
                 background: darken(#95e1d3, 10%);
+            }
+            @media #{$mobile} {
+                position: static;
+                margin: 15px 0;
+                width: 50%;
             }
         }
     }

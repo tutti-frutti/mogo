@@ -38,10 +38,17 @@
                         bottom: -55px;
                         right: 0;
                         background: rgba(161, 40, 38, 0.1);
+                        @media #{$mobile} {
+                            bottom: auto;
+                            right: auto;
+                            left: 50px;
+                            top: -7px;
+                            background: transparent;
+                        }
                         form {
                             position: relative;
                             input {
-                                @include rob(14px,25px);
+                                @include rob(14px, 25px);
                                 padding: 0 60px 0 10px;
                                 height: 25px;
                                 border: 1px solid transparent;
@@ -50,7 +57,7 @@
                                 background: #fff;
                             }
                             button {
-                                @include rob(14px,25px);
+                                @include rob(14px, 25px);
                                 position: absolute;
                                 right: 0;
                                 top: 0;
@@ -59,6 +66,9 @@
                                 cursor: pointer;
                                 color: #fff;
                                 background: #73201f;
+                                @media #{$mobile} {
+                                    background: #9a9a9a;
+                                }
                                 &:hover {
                                     background: lighten(#73201f, 15%);
                                 }
@@ -67,21 +77,6 @@
                         &.open {
                             display: block;
                             z-index: 100;
-                        }
-                    }
-                }
-                &.nav-current {
-                    a {
-                        position: relative;
-                        color: #fce38a;
-                        &::before {
-                            position: absolute;
-                            content: '';
-                            bottom: 0;
-                            left: 0;
-                            right: 0;
-                            height: 3px;
-                            background: #fce38a;
                         }
                     }
                 }
@@ -96,7 +91,46 @@
                     &:hover {
                         color: #fce38a;
                     }
+                    &.nav-current {
+                        position: relative;
+                        color: #fce38a;
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            height: 3px;
+                            background: #fce38a;
+                        }
+                    }
                 }
+            }
+        }
+    }
+    .mobile-view {
+        @media #{$mobile} {
+            display: none;
+            ul {
+                position: absolute;
+                padding: 10px 5px;
+                width: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: #656565;
+                li {
+                    display: block;
+                    margin: 5px 0;
+                    width: auto;
+                    text-align: left;
+                    a {
+                        display: inline-block;
+                    }
+                }
+            }
+            &.js-toggle {
+                display: block;
             }
         }
     }
