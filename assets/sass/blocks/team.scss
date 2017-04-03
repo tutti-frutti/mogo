@@ -1,4 +1,8 @@
 .team {
+    padding-top: 100px;
+    @media #{$tablet} {
+        padding-top: 50px;
+    }
     @media #{$mobile} {
         padding: 30px 0 0;
     }
