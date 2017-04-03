@@ -19,6 +19,9 @@
         text-align: center;
         font-size: 0;
         margin: 0 -15px;
+        @media #{$tablet} {
+            margin: 0;
+        }
         @media #{$mobile} {
             margin: 0;
         }
