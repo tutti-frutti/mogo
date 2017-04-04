@@ -628,6 +628,9 @@
     margin: 0 -15px;
     font-size: 0;
     text-align: center; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .team__list {
+        margin: 0; } }
     @media (max-width: 767px) {
       .team__list {
         margin: 0; } }
